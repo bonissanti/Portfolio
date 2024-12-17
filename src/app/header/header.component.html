@@ -4,15 +4,13 @@
 		<label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
 
 		<!-- Menu -->
-		<label class="logo">Bruno R Onissanti</label>
+    <label class="logo">{{ logo }}</label>
 		<ul>
-			<li><a class="active" href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">About</a></li>
+			<!-- <li><a class="active" href="#">Home</a></li> -->
+      <li *ngFor="let item of menu_items">
+        <a [href]="item.label" [class.active]="item.active"> {{ item.label }}</a>
+      </li>
 		</ul>
 		<!-- End of Menu -->
 	</nav>
 </header>
-
-

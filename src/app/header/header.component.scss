@@ -1,0 +1,113 @@
+/* This adds styles in nav section:
+ *
+ * Set the justify-content as space-between to keep the logo
+ * and links at opposite ends of the navbar and apply spacing
+ * to nav links to keep space between links;
+ *
+*/
+
+nav {
+	/*background-color: #FFF;*/
+	color: #8d8d8d;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	font-size: 20px;
+}
+
+ul li {
+	margin-right: 20px;
+}
+
+/*
+ * This is the style for the menu 'Home', 'Portfolio',
+ * 'Blog' and 'About'. Hover is about when mouse pass
+ * in it, changing the color.
+*/
+
+ul li a {
+	color: #8d8d8d;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+ul li a:hover {
+	color: black;
+}
+
+/* .checkbtn:
+ *
+ * This controls the behavior of the class checkbox or
+ * my logo's name. Above is the natural/default behavior.
+ * Inside of @media is the behavior of the class checkbox
+ * with reduced width.
+*/
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+/*
+ * #check:
+ *
+ * Refers to a pseudo-class, which is used to
+ * target and style HTML elements like radio buttons,
+ * checkboxes or options elements within a select
+ * dropdown when they are currently selected or "checked"
+ * by the user.
+*/
+
+#check {
+	display: none;
+}
+
+@media (max-width: 768px){
+
+	/* Check button styles */
+	.checkbtn {
+		display: block;		/* Display as block element */
+		order: 1;			/* order in flex container */
+		margin-right: 20px; /* margin of the right */
+	}
+
+	ul {
+		position: fixed;
+		top: 80px;
+		right: -100%;
+		background-color: green;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s;
+	}
+
+	ul li {
+		margin: 20px 0;
+	}
+
+	ul li a {
+		font-size: 20px;
+	}
+
+	/* Styles for the checked state of the checkbox: */
+
+	#check:checked ~ ul {
+		right: 0; 	/* Move the menu to the right */
+	}
+}

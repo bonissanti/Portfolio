@@ -1,0 +1,29 @@
+// .buttons {
+// 	display: flex;
+// 	justify-content: start;
+// 	gap: 8px;
+// }
+
+
+button {
+	padding: 10px 20px;
+	font-size: 0.7rem;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+
+    &.Primary {
+		background-color: #2C2C2C;
+		color: white;
+	}
+
+	&.Secondary {
+		background-color: white;
+		color: black;
+		border: 1px solid gray;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

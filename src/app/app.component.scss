@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'Fustat';
+	src:
+		url('../assets/fonts/Roboto-Regular.ttf') format('truetype'),
+		url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto-Regular, sans-serif;
+	background-color: #FFF;
+	background-image:
+		radial-gradient(#c6c7eb 10%, transparent 10%);
+		/*radial-gradient(#c6c7eb 7%, transparent 4%);*/
+	background-size: 7px 7px;
+	background-position: 0 0, 30px 30px;
+}
+
+
+
+/* About-me section: begin */
+
+/* This is the container from "about-me" */
+#about-me {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	text-align: start;
+	padding: 24px 100px; /* This is the position x, y from elements inside about-me */
+}
+
+.container {
+	max-width: 424px; /* The text container's size, thinnk about figma, this is similar */
+}
+
+.photo-square{
+	height: 140px;
+	width: 140px;
+	border: 1px solid gray;
+	border-radius: 25px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #2C2C2C;
+}
+
+
+.role {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.description {
+	font-size: 0.9rem;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: start;
+	gap: 8px;
+}
+
+/* Portfolio section */
+
+h2 {
+	font-size: 2.0rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #2C2C2C;
+}
+
+#portfolio {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	text-align: start;
+	padding: 40px 100px; /* This is the position x, y from elements inside about-me */
+}
+
+.container-B {
+	max-width: 840px; /* The text container's size, thinnk about figma, this is similar */
+}
+
+.projects-cards {
+	max-width: 400;
+	box-shadow: 0 4px 7px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.projects-cards:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+	padding: 32px 40px;
+}
+

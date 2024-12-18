@@ -1,0 +1,46 @@
+/* This is the container from "about-me" */
+.about-me {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	text-align: start;
+	padding: 24px 100px; /* This is the position x, y from elements inside about-me */
+}
+
+.container {
+	max-width: 424px; /* The text container's size, thinnk about figma, this is similar */
+}
+
+.photo-square{
+	height: 140px;
+	width: 140px;
+	border: 1px solid gray;
+	border-radius: 25px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #2C2C2C;
+}
+
+
+.role {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.description {
+	font-size: 0.9rem;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: start;
+	gap: 8px;
+}

@@ -19,21 +19,21 @@ body {
 	background-position: 0 0, 30px 30px;
 }
 
-
-
 /* About-me section: begin */
 
 /* This is the container from "about-me" */
+
+
 #about-me {
-	display: flex;
-	justify-content: start;
-	align-items: start;
-	text-align: start;
-	padding: 24px 100px; /* This is the position x, y from elements inside about-me */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding: 24px 100px; /* This is the position x, y from elements inside about-me */
 }
 
 .container {
-	max-width: 424px; /* The text container's size, thinnk about figma, this is similar */
+  max-width: 424px; /* The text container's size, think about figma, this is similar */
 }
 
 .photo-square{

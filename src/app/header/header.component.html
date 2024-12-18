@@ -6,11 +6,11 @@
 		<!-- Menu -->
     <label class="logo">{{ logo }}</label>
 		<ul>
-			<!-- <li><a class="active" href="#">Home</a></li> -->
       <li *ngFor="let item of menu_items">
         <a [href]="item.label" [class.active]="item.active"> {{ item.label }}</a>
       </li>
 		</ul>
 		<!-- End of Menu -->
+
 	</nav>
 </header>
